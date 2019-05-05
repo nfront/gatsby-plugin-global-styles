@@ -71,6 +71,8 @@ export default GlobalStyleComponent;
 
 Here, `reset` and `globalStyle` are two JavaScript files that each contain their own global styles that we want to compile into one global style element.
 
+You can include just one file here, if you like. Alternatively, several files can be specified if you have several global style sheets you want to compile into one `style` tag.
+
 As an example, in `src/styles/globalStyle`:
 
 ```javascript
@@ -97,11 +99,11 @@ export default globalStyles;
 
 ## How to use props (like theme) in a global style file
 
-To use `props`, like a theme, in a global style, specify `props.theme` and `props.other`, as shown above.
+To use `props`, like a theme, in a global style, specify `props.theme` and `props.other` in `gatsby-config.js`, as shown above.
 
 A theme can be any module exporting a normal object. Its propertis are then accessible inside any global styles file:
 
-In './src/styles/theme':
+In `./src/styles/theme`:
 
 ```javascript
 const theme = {
@@ -112,7 +114,7 @@ const theme = {
 export default theme;
 ```
 
-Or a `MUI theme` in './src/styles/theme':
+Or a `MUI theme` in `./src/styles/theme`:
 
 ```javascript
 import { createMuiTheme } from '@material-ui/core/styles';
@@ -181,7 +183,7 @@ import GlobalStyleComponent from './src/styles/GlobalStyleComponent';
 
 function promote(toTop, array) {
   for (let i = 0; i < array.length; i += 1) {
-    if (array[i].key === toTop) {
+    if (array[i] && array[i].key === toTop) {
       const a = array.splice(i, 1);
       array.unshift(a[0]);
       break;
