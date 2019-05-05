@@ -10,6 +10,14 @@ import os from 'os';
 export const onPreBootstrap = ({ store }, pluginOptions) => {
   const { program } = store.getState();
 
+  const fixPath = module => {
+    let newModule = module;
+    if (os.platform() === `win32`) {
+      newModule = module.split(`\\`).join(`\\\\`);
+    }
+    return newModule;
+  };
+
   let module;
   if (pluginOptions.pathToConfigModule) {
     module = `import GlobalStyleComponent from "${
@@ -20,9 +28,7 @@ export const onPreBootstrap = ({ store }, pluginOptions) => {
 export default GlobalStyleComponent;
 `;
 
-    if (os.platform() === `win32`) {
-      module = module.split(`\\`).join(`\\\\`);
-    }
+    fixPath(module);
   } else {
     module = `import createGlobalStyle from 'global-styles';
 const GlobalStyleComponent = createGlobalStyle\`\`;
@@ -48,9 +54,7 @@ export default GlobalStyleComponent;
 export default theme;
 `;
 
-    if (os.platform() === `win32`) {
-      module = module.split(`\\`).join(`\\\\`);
-    }
+    fixPath(module);
   } else {
     module = `const defaultTheme = { typography: { fontFamily: 'Arial' } };
 export default defaultTheme;
