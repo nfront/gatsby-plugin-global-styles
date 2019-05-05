@@ -7,7 +7,7 @@ test-results.json
 package-lock.json
 yarn.lock
 
-gatsby*
+/gatsby*
 !index.js
 yarn.lock
 
