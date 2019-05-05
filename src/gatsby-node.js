@@ -30,7 +30,7 @@ export default GlobalStyleComponent;
 
     fixPath(module);
   } else {
-    module = `import createGlobalStyle from 'global-styles';
+    module = `import createGlobalStyle from '@nfront/global-styles';
 const GlobalStyleComponent = createGlobalStyle\`\`;
 export default GlobalStyleComponent;
 `;
