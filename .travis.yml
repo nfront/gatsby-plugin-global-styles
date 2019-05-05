@@ -17,7 +17,7 @@ jobs:
         - npm run build
         - npm run unit
       after_script:
-        - ./cc-test-reporter after-build --exit-code 
+        - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
       deploy:
         provider: script
         skip_cleanup: true
