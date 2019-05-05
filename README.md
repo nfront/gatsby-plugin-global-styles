@@ -1,3 +1,9 @@
+[![Code Maintainability](https://img.shields.io/codeclimate/maintainability/nfront/gatsby-plugin-global-styles.svg)](https://codeclimate.com/github/nfront/gatsby-plugin-global-styles/maintainability) [![Coverage Status](https://img.shields.io/codeclimate/coverage/nfront/gatsby-plugin-global-styles.svg)](https://codeclimate.com/github/nfront/gatsby-plugin-global-styles/test_coverage) [![Build Status](https://img.shields.io/travis/nfront/gatsby-plugin-global-styles.svg)](https://travis-ci.com/nfront/gatsby-plugin-global-styles) [![Greenkeeper badge](https://badges.greenkeeper.io/nfront/gatsby-plugin-global-styles.svg)](https://greenkeeper.io/) [![npm bundle size](https://img.shields.io/bundlephobia/min/gatsby-plugin-global-styles.svg)](https://bundlephobia.com/result?p=gatsby-plugin-global-styles) ![npm (scoped)](https://img.shields.io/npm/v/gatsby-plugin-global-styles.svg)
+
+![Twitter URL](https://img.shields.io/twitter/url/https/github.com/nfront/global-styles.svg?style=social) ![Twitter Follow](https://img.shields.io/twitter/follow/magnusriga.svg?label=Follow&style=social)
+
+![npm bundle size](https://img.shields.io/bundlephobia/min/gatsby-plugin-global-styles.svg)
+
 # gatsby-plugin-global-styles
 
 A Gatsby plugin for creating independent global CSS styles, and automatically placing them at the top of the `<head>` element.
