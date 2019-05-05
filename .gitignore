@@ -7,6 +7,10 @@ test-results.json
 package-lock.json
 yarn.lock
 
+/*.js
+!index.js
+yarn.lock
+
 # Coverage directory used by tools like istanbul
 coverage/
 

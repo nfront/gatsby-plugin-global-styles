@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/nfront/gatsby-plugin-global-styles.git"
+    "url": "https://github.com/nfront/gatsby-plugin-global-styles.git"
   },
   "keywords": [
     "gatsby",
