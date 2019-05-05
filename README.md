@@ -12,23 +12,23 @@ The plugin does not rely on any other third party packages, however the `global-
 
 `npm install --save gatsby-plugin-global-styles global-styles`
 
+or:
+
+`yarn add gatsby-plugin-global-styles global-styles`
+
 ## Why to use
 
-It might be desirable to use more than one styling method for your Gatsby site.
+`gatsby-plugin-global-styles` automatically combines your own global style sheets into one collective global `style` tag, and makes sure the global `style` tag ends up where you want it to be in the `<head>` element.
 
-`gatsby-plugin-global-styles` automatically combines your own global style sheets into one collective global style tag, and make sure that global style tag ends up where you want it to be in the `<head>` element.
+By default, the global `style` tag is placed at the top of `<head>`.
 
-By default, the global style tag created with this plugin end up at the top of `<head>`.To place it before / after `typography.js`, import it in `gatsby-config.js` after / before `typography.js`.
+This package is particularly useful when utilizing several CSS styling systems.
 
-The plugin is particularly useful when utilizing several styling systems.
-
-For example, your site might be using `styled-components`, `typography.js` and `Material-UI`. If you want to add your own **global** styling to this mix, it is important that the order of the `style` tags in the website's `<head>` element is correct (properties in lower `style` tags overwrite the same properties in `style` tags above it).
-
-As inspiration, a global style could for instance include your own personal global style sheet and a style sheet such as `normalize`.
+For example, your site might be using `styled-components` and `Material-UI`. If you want to add your own **global** styling to this mix, it is important that the order of the `style` tags in the website's or app's `<head>` element is correct (properties in lower `style` tags overwrite the same properties in `style` tags above it).
 
 By using `gatsby-plugin-global-styles` and specifying the path to your `GlobalStyleComponent.js` file via the `pathToConfigModule` option (see below), the compilation and injection of your global styles is taken care of automatically by helper methods under the hood.
 
-Lastly, it is also possible to pass in props, like a theme, to your global styles. See below for instructions.
+Lastly, it is also possible to pass in props, like a theme, to your global style sheet. See below for instructions.
 
 ## How to use
 
