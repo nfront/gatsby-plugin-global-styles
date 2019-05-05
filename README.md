@@ -57,7 +57,7 @@ module.exports = {
 In `src/utils/GlobalStyleComponent`:
 
 ```javascript
-import { createGlobalStyle } from 'gatsby-plugin-global-styles';
+import { createGlobalStyle } from '@nfront/global-styles';
 import reset from '../styles/reset';
 import globalStyle from '../styles/globalStyle';
 
@@ -76,7 +76,7 @@ You can include just one file here, if you like. Alternatively, several files ca
 As an example, in `src/styles/globalStyle`:
 
 ```javascript
-import { css } from 'gatsby-plugin-global-styles';
+import { css } from '@nfront/global-styles';
 
 const globalStyles = css`
   .my-class2 {
@@ -158,7 +158,7 @@ export default muiTheme;
 In `src/styles/globalStyle`:
 
 ```javascript
-import { css } from 'gatsby-plugin-global-styles';
+import { css } from '@nfront/global-styles';
 
 const globalStyles = css`
   body {
