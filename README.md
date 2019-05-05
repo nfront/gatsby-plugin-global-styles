@@ -6,15 +6,15 @@
 
 A Gatsby plugin for creating independent global CSS styles, and automatically placing them at the top of the `<head>` element.
 
-The plugin does not rely on any other third party packages, however the `global-styles` helper modules have been split out to a separate package to keep it flexible and lean.
+The plugin does not rely on any third party packages (except React), however the core [`global-styles`](https://github.com/nfront/global-styles) modules have been split out to a separate package to keep it flexible and lean.
 
 ## Install
 
-`npm install --save gatsby-plugin-global-styles global-styles`
+`npm install --save gatsby-plugin-global-styles @nfront/global-styles`
 
 or:
 
-`yarn add gatsby-plugin-global-styles global-styles`
+`yarn add gatsby-plugin-global-styles @nfront/global-styles`
 
 ## Why to use
 
