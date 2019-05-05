@@ -28,7 +28,7 @@ export const onPreBootstrap = ({ store }, pluginOptions) => {
 export default GlobalStyleComponent;
 `;
 
-    fixPath(module);
+    module = fixPath(module);
   } else {
     module = `import { createGlobalStyle } from '@nfront/global-styles';
 const GlobalStyleComponent = createGlobalStyle\`\`;
@@ -54,7 +54,7 @@ export default GlobalStyleComponent;
 export default theme;
 `;
 
-    fixPath(module);
+    module = fixPath(module);
   } else {
     module = `const defaultTheme = { typography: { fontFamily: 'Arial' } };
 export default defaultTheme;
