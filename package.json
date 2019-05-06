@@ -71,6 +71,6 @@
   },
   "peerDependencies": {
     "gatsby": "^2.0.0",
-    "@nfront/global-styles": "^1.2.11"
+    "@nfront/global-styles": "^1.2.0"
   }
 }
