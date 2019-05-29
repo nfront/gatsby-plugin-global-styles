@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.com/nfront/gatsby-plugin-global-styles.svg?branch=master)](https://travis-ci.com/nfront/gatsby-plugin-global-styles) [![Greenkeeper badge](https://badges.greenkeeper.io/nfront/gatsby-plugin-global-styles.svg)](https://greenkeeper.io/) [![Maintainability](https://api.codeclimate.com/v1/badges/e0d0c8874fbb4e304b03/maintainability)](https://codeclimate.com/github/nfront/gatsby-plugin-global-styles/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/e0d0c8874fbb4e304b03/test_coverage)](https://codeclimate.com/github/nfront/gatsby-plugin-global-styles/test_coverage) [![npm bundle size](https://badgen.net/bundlephobia/min/gatsby-plugin-global-styles)](https://bundlephobia.com/result?p=gatsby-plugin-global-styles) [![npm](https://img.shields.io/npm/v/gatsby-plugin-global-styles.svg)](https://www.npmjs.com/package/gatsby-plugin-global-styles)
 
-![Twitter URL](https://img.shields.io/twitter/url/https/github.com/nfront/global-styles.svg?style=social) ![Twitter Follow](https://img.shields.io/twitter/follow/magnusriga.svg?label=Follow&style=social)
+[![Twitter URL](https://img.shields.io/twitter/url/https/github.com/nfront/gatsby-plugin-global-styles.svg?style=social)](https://twitter.com/intent/tweet?text=Check%20out%20this%20npm%20package:&url=https%3A%2F%2Fgithub.com%2Fnfront%2Fgatsby-plugin-global-styles) [![Twitter Follow](https://img.shields.io/twitter/follow/magnusriga.svg?label=Follow&style=social)](https://twitter.com/intent/follow?screen_name=magnusriga)
 
 # gatsby-plugin-global-styles
 
